@@ -1,0 +1,444 @@
+
+/*================== body and header styling for all EzyShop jsp pages =================== */
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f9;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header section styling */
+.top-div {
+	background-color: silver;
+	/* Silver background */
+	padding: 20px;
+}
+
+.top-div-h1 {
+	text-align: center;
+	font-size: 2rem;
+	margin: 0;
+	color: #0056b3;
+}
+
+h5 {
+	font-size: 1rem;
+	color: #333;
+	margin: 5px 0;
+	text-align: center;
+	font-style: italic;
+	/* Makes the text italic */
+}
+
+/* Horizontal rule after Live with Vibe */
+hr {
+	border: none;
+	border-top: 2px solid black;
+	width: 100%;
+	/* Full width of the screen */
+	margin: 0;
+}
+
+
+
+
+
+
+/*============================= styling for index.jsp page =============================*/
+
+.container {
+	text-align: center;
+	margin: 50px auto;
+	padding: 20px;
+	width: 50%;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Styling for links container */
+section {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	/* Reduced the gap between the boxes */
+	align-items: center;
+}
+
+section h3 {
+	font-style: italic;
+}
+
+
+/* Styling for anchor links (slimmer boxes) */
+section a {
+	display: block;
+	width: 40%;
+	/* Made the boxes slimmer */
+	padding: 10px;
+	/* Reduced padding to make them more compact */
+	background-color: #0056b3;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 20px;
+	/* Rounded corners */
+	font-size: 1.1rem;
+	transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for anchor links */
+section a:hover {
+	background-color: #003d80;
+	transform: translateY(-3px);
+}
+
+
+
+
+
+
+/*============================= footer styling for index.jsp and orderplaced.jsp page =============================*/
+
+/* Footer text styling */
+footer {
+	margin-top: 40px;
+	/* Added space between content and footer */
+	color: #888;
+	font-size: 0.9rem;
+}
+
+
+
+
+
+
+/*===================== styling for loginpage.jsp,nouserfound.jsp,item-registerdpage-view.jsp,item-registrationpage-view.jsp,user-registrationpage-view.jsp ======================*/
+
+/* Container for the form */
+.registrationcontainer {
+	max-width: 400px;
+	/* Set max width for the form */
+	margin: 50px auto;
+	/* Center the form */
+	padding: 20px;
+	/* Padding around the form */
+	background-color: #fff;
+	/* White background for the form */
+	border-radius: 10px;
+	/* Rounded corners */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	/* Subtle shadow */
+}
+
+/* Main heading styling */
+.regcontainer-divh1 {
+	text-align: center;
+	/* Center the heading */
+	color: #0056b3;
+	/* Blue color for the heading */
+	margin-bottom: 10px;
+	/* Space below the heading */
+}
+
+/* Styling for the form */
+form {
+	display: inline-block;
+	text-align: left;
+	margin-top: 20px;
+}
+
+/* Styling for table elements */
+table {
+	width: 100%;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 10px;
+	vertical-align: middle;
+}
+
+
+/* Styling for form input fields */
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 1rem;
+}
+
+/* Styling for buttons */
+input[type="submit"] {
+	width: 100px;
+	padding: 8px;
+	background-color: #0056b3;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 0.9rem;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="submit"]:hover {
+	background-color: #003d80;
+	transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+
+/*=============== Navigation bar and table  styling for homepage.jsp,useritem-added.jsp,cart.jsp and billing.jsp============*/
+
+.top-nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px;
+	background-color: #0056b3;
+}
+
+.top-nav a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s;
+}
+
+.top-nav a:hover {
+	color: #e0e0e0;
+}
+
+.top-nav b {
+	color: white;
+	font-size: 1.2rem;
+}
+
+
+/* Table styling */
+.itemtable {
+	width: 700px;
+	margin: 50px auto;
+	border-collapse: collapse;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.itemtable-thead-th,
+.itemtable-tbody-td {
+	padding: 15px;
+	text-align: center;
+	font-size: 1rem;
+}
+
+.itemtable-thead-th {
+	background-color: #0056b3;
+	color: white;
+	font-weight: bold;
+}
+
+.itemtable-tbody-tr:nth-child(even) {
+	background-color: #f4f4f9;
+}
+
+.itemtable-tbody-tr:hover {
+	background-color: #f0f0f0;
+}
+
+
+/* Add to cart button */
+.itemtable-tbody-td a {
+	padding: 8px 12px;
+	background-color: #0056b3;
+	color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s, transform 0.3s;
+}
+
+.itemtable-tbody-td a:hover {
+	background-color: #003d80;
+	transform: translateY(-2px);
+}
+
+
+
+
+
+
+/*==================== pricing and button styling for cart.jsp and billing.jsp =====================*/
+
+.pricing-h1 {
+	text-align: center;
+	color: #0056b3;
+}
+
+
+div a.buy-now,
+a.placeorder {
+	margin: 20px auto;
+	display: inline-block;
+	background-color: #28a745;
+	color: white;
+	padding: 10px 20px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s, transform 0.3s;
+}
+
+div a.placeorder:hover,
+a.buy-now:hover {
+	background-color: #218838;
+	transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+
+/*==================== styling for  useritem-added.jsp and nouserfound.jsp =====================*/
+
+/* User info section */
+.user-info h2 {
+	color: #28a745;
+	text-align: center;
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+
+.wronguser-info h2 {
+	color: red;
+	text-align: center;
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+
+.user-info p {
+	text-align: center;
+	color: #555;
+}
+
+
+
+
+
+
+
+/*============================= styling for empty-cart.jsp ===============================*/
+
+/* Centered Box for Success Message */
+.emptycart-successcontainer {
+	background-color: #ffffff;
+	/* White background */
+	border: 2px solid red;
+	/* Success red border */
+	padding: 30px;
+	margin: 100px auto;
+	/* Center the box */
+	width: 50%;
+	/* Box width */
+	border-radius: 10px;
+	box-shadow: 0px 2px 6px red;
+	/* Soft shadow */
+	text-align: center;
+}
+
+.emptycart-successcontainer .emptycart-h1 {
+	font-size: 2rem;
+	color: red;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+
+
+
+
+/*============================== styling for orderplaced.jsp ============================*/
+
+/* Centered Box for Success Message */
+.orderplaced-successcontainer {
+	background-color: #ffffff;
+	/* White background */
+	border: 2px solid #28a745;
+	/* Success red border */
+	padding: 30px;
+	margin: 100px auto;
+	/* Center the box */
+	width: 50%;
+	/* Box width */
+	border-radius: 10px;
+	box-shadow: 0 2px 6px #28a745;
+	/* Soft shadow */
+	text-align: center;
+}
+
+/* Success message styling */
+.orderplaced-successcontainer .orderplaced-h1 {
+	font-size: 2rem;
+	color: #28a745;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.orderplaced-successcontainer p {
+	font-size: 1.2rem;
+	color: #333;
+	margin-bottom: 30px;
+}
+
+
+
+
+
+/*======================== styling for orderplaced.jsp and empty-cart.jsp ========================*/
+
+/* Button styling for 'Continue Shopping' */
+.btn-continue {
+	display: inline-block;
+	padding: 12px 30px;
+	font-size: 1.2rem;
+	color: white;
+	background-color: #0056b3;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+}
+
+.btn-continue:hover {
+	background-color: #003d80;
+	/* Darker blue on hover */
+}
+
+/* Username display */
+.username {
+	font-size: 1.5rem;
+	color: #0056b3;
+	text-align: right;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	margin-top: 20px;
+}
+
+
+
+
